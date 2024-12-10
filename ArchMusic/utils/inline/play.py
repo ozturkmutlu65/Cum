@@ -105,7 +105,7 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🎧ƓЄƇЄ MƲƧƖ̇Ƈ", 
+                text=f"𝙆𝙐𝙈𝙎𝘼𝙇 𝙓 𝙏𝙀𝘼𝙈", 
                 url=f"https://t.me/sohbetikidebir"
             )
         ],
