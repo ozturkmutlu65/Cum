@@ -52,8 +52,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"⚡ 𝘿𝙀𝙎𝙏𝙀𝙆 ⚡", 
-                url=f"https://t.me/whiskeyclubb"
+                text=f"⚡ 𝙠𝙪𝙢𝙨𝙖𝙡 𝙭 𝙩𝙚𝙖𝙢 ⚡", 
+                url=f"https://t.me/the_team_kumsal"
             )
         ],
         [
