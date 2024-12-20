@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from config import LOG_GROUP_ID
-from LostMuzik import app
+from ArchMusic import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
