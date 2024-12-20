@@ -9,7 +9,7 @@ general_5 : "Bu eylemi gerçekleştirmek için sesli sohbet haklarına sahip yö
 general_6 : "Bot sesli sohbette yayın yapmıyor. 🥀"
 
 # Classes - Telegram.py
-tg_1 : "Bot şu anda indirilenlerle **Aşırı yüklenmiş**. @Blayzen hesabına düzeltmesi için bu mesajı bildiriniz.\n\n**Deneme Süresi:** {0} (__beklenen süre__))"
+tg_1 : "Bot şu anda indirilenlerle **Aşırı yüklenmiş**. @Kumsal_team_owner hesabına düzeltmesi için bu mesajı bildiriniz.\n\n**Deneme Süresi:** {0} (__beklenen süre__))"
 tg_2 : "Telegram'dan Medya İndirilirken Hata Oluştu."
 
 # Core - Call.py
@@ -227,8 +227,8 @@ queue_3 : "<u>**Sıradaki Parçalar:</u>**  [Sıradaki Parçalara Burdan Bakabil
 queue_4 : "❤️‍🩹 𝙎𝙄𝙍𝘼𝙔𝘼 𝙀𝙆𝙇𝙀𝙉𝘿𝙄̇ **#{0}\n\n🔮𝘽𝘼𝙎̧𝙇𝙄𝙆:** {1}\n**⏱𝙎𝙐̈𝙍𝙀:** {2}\n👤**𝙏𝘼𝙇𝙀𝙋 𝙀𝘿𝙀𝙉: {3}**"
 queue_5 : "Sırada Sadece Bir Parça Var, Lütfen Biraz Daha Parça Ekleyin. 🎧"
 
-stream_1 : " ****➲ 𝙔𝘼𝙔𝙄𝙉 𝘽𝘼𝙎̧𝙇𝘼𝘿𝙄 \n**𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙨𝙪̈𝙧𝙚**: {2}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {3}"
-stream_2 : " ****➲ 𝙔𝘼𝙔𝙄𝙉 𝘽𝘼𝙎̧𝙇𝘼𝘿𝙄 \n**𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙨𝙪̈𝙧𝙚**: {2}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {3}"
+stream_1 : " ****➲ 𝙔𝘼𝙔𝙄𝙉 𝘽𝘼𝙎̧𝙇𝘼𝘿𝙄 \n\n**𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙨𝙪̈𝙧𝙚**: {2}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {3}"
+stream_2 : " ****➲ 𝙔𝘼𝙔𝙄𝙉 𝘽𝘼𝙎̧𝙇𝘼𝘿𝙄 \n\n**𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙨𝙪̈𝙧𝙚**: {2}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {3}"
 stream_3 : "**𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙨𝙪̈𝙧𝙚**: {1}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {2}"
 stream_4 : "**𝙗𝙖𝙨̧𝙡𝜾𝙠**: [{0}]\n**𝙨𝙪̈𝙧𝙚**: {2}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {3}"
 stream_5 : "**𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**:{1}"
