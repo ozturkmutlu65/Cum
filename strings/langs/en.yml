@@ -9,7 +9,7 @@ general_5 : "Bu eylemi gerçekleştirmek için sesli sohbet haklarına sahip yö
 general_6 : "Bot sesli sohbette yayın yapmıyor. 🥀"
 
 # Classes - Telegram.py
-tg_1 : "Bot şu anda indirilenlerle **Aşırı yüklenmiş**. @Kumsal_team_owner hesabına düzeltmesi için bu mesajı bildiriniz.\n\n**Deneme Süresi:** {0} (__beklenen süre__))"
+tg_1 : "Bot şu anda indirilenlerle **Aşırı yüklenmiş**. @hesabına düzeltmesi için bu mesajı bildiriniz.\n\n**Deneme Süresi:** {0} (__beklenen süre__))"
 tg_2 : "Telegram'dan Medya İndirilirken Hata Oluştu."
 
 # Core - Call.py
@@ -36,7 +36,7 @@ auth_7 : "**Yetkili Kullanıcılar Listesi[AUL]:**\n\n"
 auth_8 : "┗ Tarafından eklendi:-"
 
 # PLUGINS - Admins
-admin_1 : "Müzik Zaten Duraklatıldı. 🥀"
+admin_1 : "Müzik Zaten Duraklatıldı. "
 admin_2 : "🎧 Sesli Sohbet Duraklatıldı {}!"
 admin_3 : "Müzik zaten yeniden başlatıldı."
 admin_4 : "🎧 Sesli Sohbeti Sürdüren {}!"
@@ -140,7 +140,7 @@ cplay_5 : "Yalnızca Kanallar Desteklenir."
 cplay_6 : "Kanalı bu gruba bağlamak için[{0}] kanalın **Sahibi** olmanız gerekir.\n**Kanal Sahibi:** @{1}\n\nAlternatif olarak grubunuzu o kanala bağlayabilirsiniz. ve ardından `/channelplay bağlantılı ile bağlanmayı deneyin`"
 
 #Play
-play_1 : "**Parça İndiriliyor.. Lütfen Bekleyin.** 🥀"
+play_1 : "**Parça İndiriliyor.. Lütfen Bekleyin.** "
 play_2 : "**🏷Kanal Oynatma Modu**\n🔮 Sorgu İşleniyor... Lütfen Bekleyin!\n\n**Bağlı Kanal:** {0}"
 play_3 : "Sorgu İşlenemedi! Başka Bir Parça Oynatmayı Deneyiniz. 🥀"
 play_4 : "🖇 **Yalnızca Yöneticiler Oynatır**\nYalnızca Yöneticiler ve Yetkilendirilmiş Kullanıcılar bu grupta müzik çalabilir.\n\nModu /playmode aracılığıyla değiştirin ve zaten yöneticiyseniz, /admincache aracılığıyla admincache'i yeniden yükleyin"
@@ -227,7 +227,7 @@ queue_3 : "<u>**Sıradaki Parçalar:</u>**  [Sıradaki Parçalara Burdan Bakabil
 queue_4 : "❤️‍🩹 𝙎𝙄𝙍𝘼𝙔𝘼 𝙀𝙆𝙇𝙀𝙉𝘿𝙄̇ **#{0}\n\n🔮𝘽𝘼𝙎̧𝙇𝙄𝙆:** {1}\n**⏱𝙎𝙐̈𝙍𝙀:** {2}\n👤**𝙏𝘼𝙇𝙀𝙋 𝙀𝘿𝙀𝙉: {3}**"
 queue_5 : "Sırada Sadece Bir Parça Var, Lütfen Biraz Daha Parça Ekleyin. 🎧"
 
-stream_1 : " ****➲ 𝙔𝘼𝙔𝙄𝙉 𝘽𝘼𝙎̧𝙇𝘼𝘿𝙄 \n\n**𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙨𝙪̈𝙧𝙚**: {2}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {3}"
+stream_1 : " **𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙨𝙪̈𝙧𝙚**: {2}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {3}"
 stream_2 : " ****➲ 𝙔𝘼𝙔𝙄𝙉 𝘽𝘼𝙎̧𝙇𝘼𝘿𝙄 \n\n**𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙨𝙪̈𝙧𝙚**: {2}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {3}"
 stream_3 : "**𝙗𝙖𝙨̧𝙡𝜾𝙠**: {0}\n**𝙨𝙪̈𝙧𝙚**: {1}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {2}"
 stream_4 : "**𝙗𝙖𝙨̧𝙡𝜾𝙠**: [{0}]\n**𝙨𝙪̈𝙧𝙚**: {2}\n**𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣**: {3}"
@@ -239,8 +239,8 @@ stream_6 : "**➲ 𝙔𝘼𝙔𝙄𝙉 𝘽𝘼𝙎̧𝙇𝘼𝘿𝙄  \n**𝙥�
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "🗑️ 𝙈𝙀𝙉𝙐̈𝙔𝙐̈ 𝙆𝘼𝙋𝘼𝙏"
-CLOSEMENU_BUTTON  : "💣🗑️ 𝙈𝙀𝙉𝙐̈𝙔𝙐̈ 𝙆𝘼𝙋𝘼𝙏"
+CLOSE_BUTTON  : " 𝙆𝘼𝙋𝘼𝙏"
+CLOSEMENU_BUTTON  : "𝙆𝘼𝙋𝘼𝙏"
 BACK_BUTTON : "⬅ 𝙂𝙀𝙍𝙄̇"
 UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
 
@@ -248,14 +248,14 @@ UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
 L_B_1 : "🔮 Şarkı Sözlerini Şimdi Kontrol Et"
 
 # Start
-S_B_1 : "🎧𝙔𝘼𝙍𝘿𝙄𝙈 𝙆𝙊𝙈𝙐𝙏𝙇𝘼𝙍🎧"
-S_B_2 : "🎛️𝘼𝙔𝘼𝙍𝙇𝘼𝙍🎛️"
-S_B_3 : "📢𝘿𝙀𝙎𝙏𝙀𝙆📢"
-S_B_4 : "📯𝘿𝙐𝙔𝙐𝙍𝙐📯"
+S_B_1 : "🥏𝙔𝘼𝙍𝘿𝙄𝙈 𝙆𝙊𝙈𝙐𝙏𝙇𝘼𝙍"
+S_B_2 : "🤖AYARLAR"
+S_B_3 : "🍂𝘿𝙀𝙎𝙏𝙀𝙆"
+S_B_4 : "💥D𝙐𝙔𝙐𝙍𝙐"
 S_B_5 : "✚ 𝘽𝙀𝙉𝙄̇ 𝙂𝙍𝙐𝘽𝘼 𝙀𝙆𝙇𝙀 ✚"
-S_B_6 : "𝙆𝙐𝙈𝙎𝘼𝙇 𝙓 𝙏𝙀𝘼𝙈"
-S_B_7 : "👑𝙆𝙐𝙍𝙐𝘾𝙐👑"
-S_B_8 : "🎧𝙔𝘼𝙍𝘿𝙄𝙈 𝙆𝙊𝙈𝙐𝙏𝙇𝘼𝙍🎧"
+S_B_6 : ""
+S_B_7 : "👮SAHİBİ"
+S_B_8 : "🥏𝙔𝘼𝙍𝘿𝙄𝙈 𝙆𝙊𝙈𝙐𝙏𝙇𝘼𝙍"
 
 #Help 
 H_B_1 : "💎 𝘼𝘿𝙈𝙄̇𝙉 𝙆𝙊𝙈𝙐𝙏𝙇𝘼𝙍"
