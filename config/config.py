@@ -12,22 +12,23 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "29904507"))
+API_ID = int(getenv("API_ID", "21194358"))
 
-API_HASH = getenv("API_HASH", "eaa33aa1d9c47b197c3c81a8da988378")
+API_HASH = getenv("API_HASH", "9623f07eca023e4e3c561c966513a642")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7342624106:AAFB2ZbdQjAgO5o8OKuI71W8NQ4u4PZSspA")
+BOT_TOKEN = getenv("BOT_TOKEN", "7862849015:AAHMN-CMxVleJPhhM4HgNpRu_UtgVcdCCWQ")
+
 # Database to save your chats and stats.
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://madpanel:madboy11@atlascluster.gprqayn.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Che4721:Che4721@cluster0.88srl.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 
 DURATION_LIMIT_MIN = int(
 
-    getenv("DURATION_LIMIT", "760")
+    getenv("DURATION_LIMIT", "180")
 
 )  # Remember to give value in Minutes
 
@@ -35,33 +36,32 @@ DURATION_LIMIT_MIN = int(
 
 SONG_DOWNLOAD_DURATION = int(
 
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "360")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
 
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002182187594"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","-1002284038522"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","geceexpresbot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","disnepmuzik")
 
 # Your User ID.
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "5901320319").split())
+    map(int, getenv("OWNER_ID", "7465402367").split())
 
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
-
-HEROKU_API_KEY = getenv("HEROKU_API_KEY", "HRKU-1f0b9d66-abb4-4a57-b2e6-6967ce74b022")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
 
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "pulsemuzik")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 # For customized or modified Repository
 
@@ -69,7 +69,7 @@ UPSTREAM_REPO = getenv(
 
     "UPSTREAM_REPO",
 
-    "https://github.com/Silahanim21/bannall",
+    "https://github.com/olurunabirak/kla",
 
 )
 
@@ -77,28 +77,27 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 # GIT TOKEN ( if your edited repo is private)
 
-GIT_TOKEN = getenv("GIT_TOKEN", "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")
+GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "https://t.me/the_team_kumsal")
- # Example:- https://t.me/birtutammsevgi
+    "SUPPORT_CHANNEL", "https://t.me/EtiketTaggerDuyuru") # Example:- https://t.me/ArchBots
 
 SUPPORT_GROUP = getenv(
 
-    "SUPPORT_GROUP", "https://t.me/KumsalSohbettr")  # Example:- https://t.me/whiskeyclubb
+    "SUPPORT_GROUP", None)  # Example:- https://t.me/ARCH_SUPPORTS
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "false")
 
 # Time after which you're assistant account will leave chats automatically.
 
 AUTO_LEAVE_ASSISTANT_TIME = int(
 
-    getenv("ASSISTANT_LEAVE_TIME", "3400")
+    getenv("ASSISTANT_LEAVE_TIME", "5400")
 
 )  # Remember to give value in Seconds
 
@@ -132,13 +131,13 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 # Your Github Repo.. Will be shown on /start Command
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/kumsalfed6301/Kumsal-muzik-bot") 
+GITHUB_REPO = getenv("GITHUB_REPO", None) 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "2041df9cbcd142cba804578a2cf85939")
 
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "80ffd296320e49299830e80b11e3bf73")
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
 
@@ -156,7 +155,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "50"))
 
 CLEANMODE_DELETE_MINS = int(
 
-    getenv("CLEANMODE_MINS", "1")
+    getenv("CLEANMODE_MINS", "5000000")
 
 )  # Remember to give value in Seconds
 
@@ -184,7 +183,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "BAC9UbY9e3fAI4Xc1uUNuOug-qbX_S4K2mWL3oTeHXix_e66d3-rhcX8N-YZZWm1is6hRGAw8-fglHD_pfPiKDwbz13tgwzm8ftOaoiEjS8ZvDM6SQk8pJOEttgFaMlDEhxjEPqp6k7lvoX6LLI8IOtLdKvZbe40kFijmlfCI3MJpF6LKeHQjw8_QW2gBK8Rpzhz2iJhU8AuiuKgHVnlQUvTedQOlI_CBoSkrraaHBEkLlQxGX5iYaoFgtcQE09h82NhbyYBPdvWDlwzHvHPnjKUrJQtET7HTdYG5cwKSPh2ogPNXxr16dsbSEhW8BCKm4umoQ6zHJ3sYaFxKEArw-gTAAAAAas0OEcA")
+STRING1 = getenv("STRING_SESSION", "BADNvmIABE3xp89i844U06p-ITXfp3P7J5rP17I951BEVBlV62XO3Rc26L5Elhk24Hf6AnxjxQzCtRAy2NnRPmRgTuBf9SZooTa_CjPhQyRBfJYkVuqQjG4lPUHWkaydJz7fM8ISkaZkxFyctu8jcteXdnDka4Nxh2-GNwVdAA-jcSNIJhz1XREO4vrY1SaV3ErYt50j3S0hS0MESR6huiC8Xrmg6EB-Uc3YPkPCSv0Z-pXMlZ-DLvBFPf7GLOYiif33zsVAYN6dIUekiFvmtZ6YJRiQqoWmuqHoXJTD1t0faIwo0ZmyuV6GpLXqAm9oOrcADkfSfz38JMxl3AnCWXVk7A9lCQAAAAHOf40UAA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 
@@ -202,7 +201,7 @@ YTDOWNLOADER = 1
 
 LOG = 2
 
-LOG_FILE_NAME = "ArchMusiclogs.txt"
+LOG_FILE_NAME = "Worexis.txt"
 
 adminlist = {}
 
@@ -218,13 +217,13 @@ autoclean = []
 
 # Images
 
-START_IMG_URL = getenv("START_IMG_URL", "https://envs.sh/4B_.jpg")
+START_IMG_URL = getenv("START_IMG_URL", None)
 
 PING_IMG_URL = getenv(
 
     "PING_IMG_URL",
 
-    "https://envs.sh/4B_.jpg",
+    "assets/Ping.jpeg",
 
 )
 
