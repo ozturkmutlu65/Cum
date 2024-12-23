@@ -1,23 +1,6 @@
 import random
 
 from pyrogram.types import InlineKeyboardButton
-
-selection = [
-    "▁▄▂▇▄▅▄▅▃",
-    "▁▃▇▂▅▇▄▅▃",
-    "▃▁▇▂▅▃▄▃▅",
-    "▃▄▂▄▇▅▃▅▁",
-    "▁▃▄▂▇▃▄▅▃",
-    "▃▁▄▂▅▃▇▃▅",
-    "▁▇▄▂▅▄▅▃▄",
-    "▁▃▅▇▂▅▄▃▇",
-    "▃▅▂▅▇▁▄▃▁",
-    "▇▅▂▅▃▄▃▁▃",
-    "▃▇▂▅▁▅▄▃▁",
-    "▅▄▇▂▅▂▄▇▁",
-    "▃▅▂▅▃▇▄▅▃",
-]
-
 def time_to_sec(time: str):
     x = time.split(":")
 
@@ -42,57 +25,70 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     x, y = str(round(played_sec/total_sec,1)).split(".")
     pos = int(y)
 
-    line = "─"
-    circle = "●"
+    line = ""
+    circle = ""
 
     bar = line*(pos-1)
     bar += circle
     bar += line*(10-len(bar))
 
     buttons = [
-        [
+         [
             InlineKeyboardButton(
-                text=f"⚡ 𝙠𝙪𝙢𝙨𝙖𝙡 𝙭 𝙩𝙚𝙖𝙢 ⚡", 
-                url=f"https://t.me/the_team_kumsal"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-        ],
-    ]
-    return buttons
-
-
-def telegram_markup_timer(_, chat_id, played, dur, videoid):
-    bar = random.choice(selection)
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"🎧ƓЄƇЄ MƲƧƖ̇Ƈ", 
-                url=f"https://t.me/sohbetikidebir"
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
             )
         ],
         
         [
+              InlineKeyboardButton(text="✚ ᴘᴀʀᴄ̧ᴀʏɪ ᴛᴇᴋʀᴀʀʟᴀ ✚", callback_data=f"ADMIN Loop|{chat_id}"),
+        ],                 
+        [
+            InlineKeyboardButton(text="▷",callback_data=f"ADMIN Resume|{chat_id}",),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="‣‣", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+             
+        ],
+        [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="◂◂ 10 ",
+                callback_data=f"ADMIN 1|{chat_id}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
+                text="◂◂ 30 ",
+                callback_data=f"ADMIN 3|{chat_id}",
             ),
+            InlineKeyboardButton(
+                text="10 ▸▸",
+                callback_data=f"ADMIN 2|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="30 ▸▸",
+                callback_data=f"ADMIN 4|{chat_id}",
+            ),
+        ],
+        
+    ]
+    return buttons
+
+
+def telegram_markup_timer(_, chat_id, played, dur):
+    bar = random.choice(selections)
+    buttons = [
+
+        [
+            
+            InlineKeyboardButton(text="▷",callback_data=f"ADMIN Resume|{chat_id}",),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="‣‣", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+             
         ],
     ]
     return buttons
 
+        
 
 # Rest of the functions remain the same...
 
@@ -104,22 +100,10 @@ def telegram_markup_timer(_, chat_id, played, dur, videoid):
 def stream_markup(_, videoid, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(
-                text=f"𝙆𝙐𝙈𝙎𝘼𝙇 𝙓 𝙏𝙀𝘼𝙈", 
-                url=f"https://t.me/sohbetikidebir"
-            )
+             
+        
         ],
         
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-        ],
     ]
     return buttons
 
@@ -127,14 +111,9 @@ def stream_markup(_, videoid, chat_id):
 def telegram_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            ),
+            
         ],
+        
     ]
     return buttons
 
@@ -146,13 +125,6 @@ def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🎧ƓЄƇЄ MƲƧƖ̇Ƈ", 
-                url=f"https://t.me/sohbetikidebir"
-            )
-        ],
-        
-        [
-            InlineKeyboardButton(
                 text=_["P_B_1"],
                 callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
             ),
@@ -160,6 +132,12 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            )
         ],
     ]
     return buttons
@@ -169,19 +147,18 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🎧ƓЄƇЄ MƲƧƖ̇Ƈ", 
-                url=f"https://t.me/sohbetikidebir"
-            )
-        ],
-        
-        [
-            InlineKeyboardButton(
                 text=_["P_B_1"],
                 callback_data=f"ArchMusicPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"ArchMusicPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
     ]
