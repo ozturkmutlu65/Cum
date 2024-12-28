@@ -221,7 +221,7 @@ song_10 : "Sunuculardan telegrama yüklenemedi."
 song_11 : "**Yükleme Başladı\n\nYükleme hızı yavaş olabilir. Lütfen bekleyin...** 🔮 "
 
 # Tools - Queue
-queue_1 : "**𝙔𝘼𝙔𝙄𝙉 𝙔𝙐̈𝙆𝙇𝙀𝙉𝙄̇𝙔𝙊𝙍.** 🔮"
+queue_1 : "𝙔𝘼𝙔𝙄𝙉 𝙔𝙐̈𝙆𝙇𝙀𝙉𝙄̇𝙔𝙊𝙍."
 queue_2 : "Sırada Malesef Hiçbir Şey Yok. 😔"
 queue_3 : "<u>**Sıradaki Parçalar:</u>**  [Sıradaki Parçalara Burdan Bakabilirsiniz]({0})"
 queue_4 : "❤️‍🩹 𝙎𝙄𝙍𝘼𝙔𝘼 𝙀𝙆𝙇𝙀𝙉𝘿𝙄̇ **#{0}\n\n🔮𝘽𝘼𝙎̧𝙇𝙄𝙆:** {1}\n**⏱𝙎𝙐̈𝙍𝙀:** {2}\n👤**𝙏𝘼𝙇𝙀𝙋 𝙀𝘿𝙀𝙉: {3}**"
